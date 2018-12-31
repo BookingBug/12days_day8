@@ -7,7 +7,7 @@
   "author": "BookingBug",
   "licence": "GPL",
   "tags": "12days",
-  "config": false,
+  "config": true,
   "panels": [ 
     "day8_panel" 
   ],

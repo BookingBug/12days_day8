@@ -12,7 +12,7 @@
       "name":"Present",
       "description":"Called  to see the 8 maids",
       "type":"PublicScript",
-      "actions": ["Get"],
+      "actions": ["Get", "Post"],
       "log_type": "Tail",
       "enabled": true,
       "handler": "present"

@@ -6,7 +6,10 @@ exports.present = function(data, callback){
 
   console.log("Slack data:", data)
 
-  var slack_response = { 
+  var slack_response;
+
+  if (bbCore.getConfigValue("team_domain") == "bookingbug"){
+    slack_response = { 
       text: ":musical_score: :musical_note: :musical_note: :musical_note: \n" +
       "8 Maids a milking\n" + 
       "7 Swans a swimming\n" + 
@@ -18,7 +21,10 @@ exports.present = function(data, callback){
       "a partridge in a pair tree\n" + 
       ":musical_note: :musical_note: :musical_note: :musical_note: :musical_note: "
     }
- 
+  } else {
+    slack_response = {text: "Sorry, no presents for you"}
+  }
+
   callback(null, {
     proxy: true,
     response: slack_response

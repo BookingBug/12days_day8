@@ -1,0 +1,13 @@
+{
+  "properties": {
+    "token":  {
+      "title": "Token",
+      "type": "string"
+    },
+    "team_domain":  {
+      "title": "Token",
+      "type": "string"
+    }
+  },
+  "required": []
+}
